@@ -1,7 +1,7 @@
 # 该项目旨在提供对称加密并以.code格式记录文本信息
 import hashlib
 from decimal import Decimal, getcontext
-# 公钥处理
+# 密钥处理
 def key(k):
     sha3_224=hashlib.sha3_224()
     sha3_224.update(k.encode('utf-8'))
